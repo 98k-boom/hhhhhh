@@ -1,0 +1,119 @@
+<view class='main_content'>
+  <!-- banner -->
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image 
+          src="{{item}}" 
+          class="slide-image"
+        />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!--  -->
+  <zan-panel title='为你优选' class="good_panel">
+    <zan-row>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="shop"></zan-icon>
+          <view>运动馆</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="exchange-record"></zan-icon>
+          <view>优选服饰</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="cart"></zan-icon>
+          <view>车品馆</view>
+        </view>
+      </zan-col>
+    </zan-row>
+    <zan-row>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="home"></zan-icon>
+          <view>家具馆</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="sign"></zan-icon>
+          <view>鞋靴馆</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="tosend"></zan-icon>
+          <view>数码管</view>
+        </view>
+      </zan-col>
+    </zan-row>
+    <zan-row>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="like-o"></zan-icon>
+          <view>医药健康馆</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="chat"></zan-icon>
+          <view>手机馆</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom_zan_col">
+        <view class='custom_zan_col_wrap'>
+          <zan-icon type="add-o"></zan-icon>
+          <view>钟表馆</view>
+        </view>
+      </zan-col>
+    </zan-row>
+  </zan-panel>
+
+  <!--  -->
+  <zan-panel title='优选热销' class="good_panel">
+    <zan-cell-group>
+      <zan-cell is-link="{{true}}">
+        <zan-card
+          card-class="hot_good_card"
+          thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+          price="99.99"
+          title="红烧牛肉【新西兰嫩牛】"
+          desc="300克 50%"
+          status="已售罄"
+        >
+        </zan-card>
+      </zan-cell>
+      <zan-cell is-link="/pages/dashboard/index">
+        <zan-card
+          card-class="hot_good_card"
+          thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+          price="99.99"
+          title="红烧牛肉【新西兰嫩牛】"
+          desc="300克 50%"
+          status="已售罄"
+        >
+        </zan-card>
+      </zan-cell>
+      <zan-cell is-link="{{true}}">
+        <zan-card
+          card-class="hot_good_card"
+          thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+          price="99.99"
+          title="红烧牛肉【新西兰嫩牛】"
+          desc="300克 50%"
+          status="已售罄"
+        >
+        </zan-card>
+      </zan-cell>
+    </zan-cell-group>
+  </zan-panel>
+</view>

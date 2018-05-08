@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shoppingcart/shoppingcart",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundColor": "#F9F9F9",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "卖东西的地方",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#999",
+    "selectedColor": "#E64340",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      },
+      {
+        "pagePath": "pages/shoppingcart/shoppingcart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "debug": true
+}
