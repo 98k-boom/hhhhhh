@@ -9,11 +9,13 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>hhhhhh-common</module>
-        <module>hhhhhh-service</module>
+        <module>hhhhhh-base</module>
+        <module>hhhhhh-user</module>
+        <module>hhhhhh-item</module>
+        <module>hhhhhh-cart</module>
+        <module>hhhhhh-order</module>
+        <module>hhhhhh-search</module>
         <module>hhhhhh-api</module>
-        <module>hhhhhh-admin</module>
-        <module>hhhhhh-web</module>
     </modules>
 
     <parent>

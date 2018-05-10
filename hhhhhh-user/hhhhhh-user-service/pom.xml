@@ -3,30 +3,24 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hhhhhh-admin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>hhhhhh-user-service</artifactId>
     <packaging>jar</packaging>
 
-    <name>hhhhhh-admin</name>
-    <description>hhhhhh goodbuy admin</description>
-
     <parent>
-        <artifactId>goodbuy</artifactId>
         <groupId>com.hhhhhh</groupId>
+        <artifactId>hhhhhh-user</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <build>
+    <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
