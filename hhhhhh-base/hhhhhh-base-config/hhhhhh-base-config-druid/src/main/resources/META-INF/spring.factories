@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.hhhhhh.config.druid.DruidAutoConfiguration,\
+com.hhhhhh.config.druid.DruidMonitorAutoConfiguration

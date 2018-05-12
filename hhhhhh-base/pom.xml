@@ -7,8 +7,8 @@
     <packaging>pom</packaging>
 
     <parent>
-        <artifactId>goodbuy</artifactId>
         <groupId>com.hhhhhh</groupId>
+        <artifactId>goodbuy</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -18,7 +18,7 @@
 		<module>hhhhhh-base-config</module>
 		<module>hhhhhh-base-pojo</module>
 		<module>hhhhhh-base-mapper</module>
-		<module>hhhhhh-base-redis</module>
+        <module>hhhhhh-base-service</module>
 	</modules>
 
     <name>hhhhhh-base</name>

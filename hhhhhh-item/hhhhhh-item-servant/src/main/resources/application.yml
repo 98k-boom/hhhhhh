@@ -1,0 +1,32 @@
+#DUBBOX
+dubbox:
+  application: 
+    name: xbin-store-service-item
+    organization: dubbox
+    owner: binux
+  annotation:
+    package: com.hhhhhh.item.servant
+
+spring:
+  profiles:
+    active: @profiles.active@
+
+mybatis:
+    type-aliases-package: cn.binux.pojo
+    mapper-locations: classpath:mapper/*.xml
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+# Redis
+redisKey:
+  # 缓存时间 默认半小时
+  expire_time: 1800
+  prefix:
+    item_info_profix: 'ITEM_INFO:'
+  suffix:
+    item_info_base_suffix: ':BASE'
+    item_info_desc_suffix: ':DESC'

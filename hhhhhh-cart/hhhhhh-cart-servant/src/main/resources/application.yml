@@ -1,0 +1,50 @@
+#DUBBOX
+dubbox:
+  application: 
+    name: hhhhhh-cart
+    organization: dubbox
+    owner: Jaward
+  annotation:
+    package: com.hhhhhh.cart.servant
+
+spring:
+  profiles:
+    active: @profiles.active@
+
+mybatis:
+    type-aliases-package: com.hhhhhh.pojo
+    mapper-locations: classpath:com/hhhhhh/mapper/*.xml
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+# Redis
+redisKey:
+  # 缓存时间 默认半小时
+  expire_time: 1800
+  prefix:
+# 购物车
+    cart_info_profix: 'CART_INFO:'
+# 商品
+    item_info_profix: 'ITEM_INFO:'
+    item_info_base_suffix: ':BASE'
+    item_info_desc_suffix: ':DESC'
+    # Redis 缓存时间 默认3天
+    redis_cart_expire_time: 259200
+
+login:
+  # 验证名
+  validation:
+    #登录名
+    ispinengaged: isPinEngaged
+    #邮箱
+    isemailengaged: isEmailEngaged
+    #手机
+    ismobileengaged: isMobileEngaged
+  # 推荐登录名后缀随机数取值范围
+  random_number: 50000
+  # 登录成功页面
+  success_url: http://localhost:8104/success

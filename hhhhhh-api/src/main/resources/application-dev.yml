@@ -1,0 +1,17 @@
+server:
+  port: 8100
+
+#DUBBO
+dubbox:
+  registry:
+    protocol: zookeeper
+    address: 221.228.202.41:2181
+  monitor:
+    enabled: false
+    address:  127.0.0.1:6060
+    username: admin
+    password: admin
+
+logging:
+  path: F:/data
+  file: logback.log

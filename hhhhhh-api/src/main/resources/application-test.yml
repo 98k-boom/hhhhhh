@@ -1,0 +1,17 @@
+server:
+  port: 8100
+
+#DUBBO
+dubbox:
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+  monitor:
+    enabled: false
+    address:  127.0.0.1:6060
+    username: admin
+    password: admin
+
+logging:
+    path: /data/weblog/java/api.jaward.cn
+    file: logback.log

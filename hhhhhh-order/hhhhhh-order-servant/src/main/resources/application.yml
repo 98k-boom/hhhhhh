@@ -1,0 +1,28 @@
+#DUBBOX
+dubbox:
+  application: 
+    name: hhhhhh-order
+    organization: dubbox
+    owner: Jaward
+  annotation:
+    package: com.hhhhhh.order.servant
+
+mybatis:
+    type-aliases-package: com.hhhhhh.pojo
+    mapper-locations: classpath:com/hhhhhh/mapper/*.xml
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+# Redis
+redisKey:
+  # 缓存时间 一天
+  expire_time: 86400
+  prefix:
+    cart_info_profix: 'CART_INFO:'
+    cart_order_info_profix: 'CART_ORDER_INFO:'
+    cart_order_index_profix: 'CART_ORDER_INDEX:'
+

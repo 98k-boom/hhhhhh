@@ -14,8 +14,8 @@
     </parent>
 
     <modules>
-		<module>hhhhhh-order-service</module>
-		<module>hhhhhh-order-provider</module>
+		<module>hhhhhh-order-client</module>
+		<module>hhhhhh-order-servant</module>
 	</modules>
 
     <name>hhhhhh-order</name>

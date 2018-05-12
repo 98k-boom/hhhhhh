@@ -1,0 +1,19 @@
+#DUBBO
+dubbox:
+  application:
+    name: hhhhhh-api
+    organization: dubbox
+    owner: jaward
+  annotation:
+    package: com.hhhhhh.api.controller
+
+spring:
+  profiles:
+    active: @profiles.active@
+
+server:
+  error:
+    path: /500
+
+# swagger2
+swagger2.package: com.hhhhhh.api.controller
