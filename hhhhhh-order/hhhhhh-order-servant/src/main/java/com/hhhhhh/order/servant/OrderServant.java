@@ -74,7 +74,7 @@ public class OrderServant implements OrderService {
         //设置订单id
         order.setOrderId(orderId);
         //设置用户id
-        order.setUserId(user.getId());
+        order.setUserId(1L);
         //设置地址id
         order.setAddrId(Long.valueOf(addrId));
         //设置支付类型

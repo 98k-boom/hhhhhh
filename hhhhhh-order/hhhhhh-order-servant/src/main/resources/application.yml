@@ -25,4 +25,3 @@ redisKey:
     cart_info_profix: 'CART_INFO:'
     cart_order_info_profix: 'CART_ORDER_INFO:'
     cart_order_index_profix: 'CART_ORDER_INDEX:'
-

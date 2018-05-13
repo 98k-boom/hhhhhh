@@ -1,7 +1,7 @@
 package com.hhhhhh.cart;
 
-import com.alibaba.dubbo.container.Main;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,10 +13,15 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @MapperScan(basePackages = "com.hhhhhh.mapper")
 @ComponentScan(value = {"com.hhhhhh.service"})
-public class CartServantApplication {
+public class CartServantApplication  implements CommandLineRunner {
 
-	public static void main(String[] args) {
-//		SpringApplication.run(CartServantApplication.class, args);
-        Main.main(args);
+	public static void main(String[] args) throws Exception {
+		SpringApplication.run(CartServantApplication.class, args);
+//        Main.main(args);
+	}
+
+	@Override
+	public void run(String... strings) throws Exception {
+        Thread.currentThread().join();
 	}
 }

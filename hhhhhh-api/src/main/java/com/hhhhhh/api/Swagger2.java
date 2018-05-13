@@ -44,8 +44,8 @@ public class Swagger2 {
     }
 
     private ApiInfo apiInfo() {
-        Contact contact=new Contact("Binux",
-                "http://git.oschina.net/binu/xbin-store","xu.binux@gmail.com");
+        Contact contact=new Contact("Jaward",
+                "https://github.com/98k-boom/hhhhhh","huazi357@gmail.com");
 
         return new ApiInfoBuilder()
                 .title(title + " RESTful APIs")
