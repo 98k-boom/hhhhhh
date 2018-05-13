@@ -1,3 +1,124 @@
-<view>
-  欢迎来到 --购物车--
+<view class='main_content'>
+  <view wx:if='{{!hasGoods}}' class='zan-center empty_cart_wrap'>
+    <zan-row class='zan-font-16 zan-c-gray-dark empty_cart'>
+      <zan-col col="24">
+        购物车竟然是空的 (ΩДΩ)
+      </zan-col>
+    </zan-row>
+    <zan-row class='zan-font-14 zan-c-gray empty_cart_sub'>
+      <zan-col col="24">
+        记得用愿望填满购物车
+      </zan-col>
+    </zan-row>
+    <zan-row class='empty_cart_btn'>
+      <zan-col col="24">
+        <zan-button type="danger" size='small' plain bindtap='gotoShop'>
+          去逛逛
+        </zan-button>
+      </zan-col>
+    </zan-row>
+  </view>
+
+  <!-- <view wx:else> -->
+  <view>
+    <!-- 选择结算物品区域 -->
+    <zan-panel title='愿望单' class="good_panel">
+      <zan-cell-group>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X1"
+          >
+          </zan-card>
+        </zan-cell>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X2"
+          >
+          </zan-card>
+        </zan-cell>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X3"
+          >
+          </zan-card>
+        </zan-cell>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X1"
+          >
+          </zan-card>
+        </zan-cell>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X1"
+          >
+          </zan-card>
+        </zan-cell>
+        <zan-cell>
+          <zan-card
+            card-class="hot_good_card"
+            thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            price="99.99"
+            title="红烧牛肉【新西兰嫩牛】"
+            desc="300克 50%"
+            status="X1"
+          >
+          </zan-card>
+        </zan-cell>
+      </zan-cell-group>
+    </zan-panel>
+
+    <!-- 结算区域 -->
+    <zan-panel class='cart_settlement_wrap'>
+      <zan-row>
+        <zan-col col="6" class='zan-font-14 cart_settlement_select'>
+          全选
+        </zan-col>
+        <zan-col col="11" class='zan-font-12 cart_settlement_money_wrap'>
+          <zan-row class="cart_settlement_money zan-c-red">
+            合计：¥ 159.00
+          </zan-row>
+          <zan-row class="cart_settlement_tips zan-c-gray">
+            不含运费
+          </zan-row>
+        </zan-col>
+        <zan-col col="7">
+          <zan-button type="danger" size='large' bindtap=''>
+            结算
+          </zan-button>
+        </zan-col>
+      </zan-row>
+    </zan-panel>
+
+    <zan-row>
+      <zan-col col="24" col-class="cart_nothing_more">
+        {{'-- 已无更多 --'}}
+      </zan-col>
+  </zan-row>
+  </view>
 </view>

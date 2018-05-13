@@ -1,6 +1,6 @@
 {
   "enablePullDownRefresh": true,
-  "backgroundTextStyle": "dark",
+  "backgroundTextStyle": "#666",
   "usingComponents": {
     "zan-row": "../../zanui-weapp/dist/row/index",
     "zan-col": "../../zanui-weapp/dist/col/index",

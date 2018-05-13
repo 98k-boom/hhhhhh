@@ -116,4 +116,10 @@
       </zan-cell>
     </zan-cell-group>
   </zan-panel>
+
+  <zan-row>
+      <zan-col col="24" col-class="text_loading_more">
+        {{loadingMore ? '加载中 ...' : '-- 已无更多 --'}}
+      </zan-col>
+  </zan-row>
 </view>

@@ -11,3 +11,11 @@
   box-sizing: border-box;
   background: #F9F9F9;
 }
+
+.main_content {
+  background: #f9f9f9;
+  padding-bottom: 15pt;
+  min-height: 100vh;
+  box-sizing: border-box;
+  border: none;
+}

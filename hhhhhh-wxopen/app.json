@@ -22,10 +22,6 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "logs"
-      },
-      {
         "pagePath": "pages/shoppingcart/shoppingcart",
         "text": "购物车"
       },

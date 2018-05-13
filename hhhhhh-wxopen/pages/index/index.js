@@ -8,7 +8,9 @@ Page({
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
-    duration: 500
+    duration: 500,
+
+    loadingMore: true,
   },
   onLoad: function () {
     
@@ -21,11 +23,19 @@ Page({
     }, 1500);
   },
   onReachBottom: function () {
-    wx.showLoading({ // 显示加载图标
-      title: '正在加载更多...',
-    });
-    setTimeout(function(){
-      wx.hideLoading(); // 隐藏加载框
+    // wx.showLoading({ // 显示加载图标
+    //   title: '正在加载更多...',
+    // });
+    // setTimeout(function(){
+    //   wx.hideLoading(); // 隐藏加载框
+    // }, 2000);
+
+    wx.showNavigationBarLoading(); // 显示顶部刷新图标
+    setTimeout(() => {
+      wx.hideNavigationBarLoading(); // 隐藏导航栏加载框
+      this.setData({
+        loadingMore: false
+      })
     }, 2000);
   }
 })
