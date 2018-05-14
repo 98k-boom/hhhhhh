@@ -6,7 +6,7 @@ dubbox:
   protocol:
     name: dubbo
     port: 20884
-    host: 127.0.0.1
+    host: 221.228.202.41
     timeout: 30000
     threadpool: fixed
     threads: 500
@@ -15,39 +15,46 @@ dubbox:
     optimizer: com.hhhhhh.common.serial.SerializationOptimizerImpl
   monitor:
     enabled: false
-    address: 127.0.0.1:6060
+    address: 221.228.202.41:6060
     username: admin
     password: admin
 
 druid:
-    url: jdbc:mysql://221.228.202.41:3306/hhhhhh?characterEncoding=utf-8
-    driver-class: com.mysql.jdbc.Driver
-    username: root
-    password: L4sFJXxk1zPohnRGJ2dj3RjNAmsy66mM9dNnHIW1o+bUk8g4q1AWGiYQLvNt0rpYuM+A6xdB4X3AZ4E2KVkzEQ==
-    initial-size: 1
-    min-idle: 1
-    max-active: 20
-    test-on-borrow: true
-    max-wait: 60000
-    time-between-eviction-runs-millis: 60000
-    min-evictable-idle-time-millis: 300000
-    validation-query: SELECT 1 FROM DUAL
-    test-While-Idle: true
-    test-on-return: false
-    pool-prepared-statements: false
-    max-pool-prepared-statement-per-connection-size: 20
-    filters: stat,wall,log4j,config
-    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=true
-    monitor:
-          enabled: false
-          druid-stat-view: /druid/*
-          druid-web-stat-filter: /*
-          allow: 219.230.50.107,127.0.0.1
-          deny: 192.168.1.73
-          login-username: admin
-          login-password: 123456
-          exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
-          reset-enable: false
+  url: jdbc:mysql://221.228.202.41:3306/hhhhhh?characterEncoding=utf-8
+  driver-class: com.mysql.jdbc.Driver
+  username: root
+  password: L4sFJXxk1zPohnRGJ2dj3RjNAmsy66mM9dNnHIW1o+bUk8g4q1AWGiYQLvNt0rpYuM+A6xdB4X3AZ4E2KVkzEQ==
+  initial-size: 1
+  min-idle: 1
+  max-active: 20
+  test-on-borrow: true
+  max-wait: 60000
+  time-between-eviction-runs-millis: 60000
+  min-evictable-idle-time-millis: 300000
+  validation-query: SELECT 1 FROM DUAL
+  test-While-Idle: true
+  test-on-return: false
+  pool-prepared-statements: false
+  max-pool-prepared-statement-per-connection-size: 20
+  filters: stat,wall,log4j,config
+  connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000;config.decrypt=true
+  monitor:
+    enabled: false
+    druid-stat-view: /druid/*
+    druid-web-stat-filter: /*
+    allow: 219.230.50.107,127.0.0.1
+    deny: 192.168.1.73
+    login-username: admin
+    login-password: 123456
+    exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+    reset-enable: false
+
+# REDIS (RedisProperties)
+redis:
+  cluster: false
+  single-host: 221.228.202.41
+  single-port: 6379
+  password:
 
 # 静态页面生成目录
 static_html_path: /data/webapps/imgstatic.jaward.cn/hhhhhh/item/

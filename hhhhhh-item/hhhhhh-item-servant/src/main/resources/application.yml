@@ -3,7 +3,7 @@ dubbox:
   application: 
     name: hhhhhh-item
     organization: dubbox
-    owner: binux
+    owner: Jaward
   annotation:
     package: com.hhhhhh.item.servant
 
@@ -12,14 +12,14 @@ spring:
     active: @profiles.active@
 
 mybatis:
-    type-aliases-package: cn.binux.pojo
-    mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hhhhhh.pojo
+  mapper-locations: classpath:com/hhhhhh/mapper/*.xml
 
 pagehelper:
-    helperDialect: mysql
-    reasonable: true
-    supportMethodsArguments: true
-    params: count=countSql
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
 
 # Redis
 redisKey:

@@ -48,3 +48,10 @@ druid:
     login-password: 123456
     exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
     reset-enable: false
+
+# REDIS (RedisProperties)
+redis:
+  cluster: false
+  single-host: 221.228.202.41
+  single-port: 6379
+  password:

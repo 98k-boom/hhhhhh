@@ -6,7 +6,7 @@ dubbox:
   protocol:
     name: dubbo
     port: 20888
-    host: 127.0.0.1
+    host: 221.228.202.41
     timeout: 30000
     threadpool: fixed
     threads: 500
@@ -15,7 +15,7 @@ dubbox:
     optimizer: com.hhhhhh.common.serial.SerializationOptimizerImpl
   monitor:
     enabled: false
-    address: 127.0.0.1:6060
+    address: 221.228.202.41:6060
     username: admin
     password: admin
 
@@ -48,3 +48,10 @@ druid:
     login-password: 123456
     exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
     reset-enable: false
+
+# REDIS (RedisProperties)
+redis:
+  cluster: false
+  single-host: 221.228.202.41
+  single-port: 6379
+  password:
